@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Radio Canada", sans-serif;
+  background-color: rgb(56, 65, 82);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+}
+
+.text {
+  background-color: rgb(32, 40, 58);
+  flex-grow: 1;
+  color: rgb(100, 106, 124);
+  padding: 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  caret-color: red;
+}
+
+.text::placeholder {
+  color: rgb(100, 106, 124);
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.task-text {
+  background-color: rgb(17, 24, 39);
+}
+
+section {
+  max-width: 700px;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+h1 {
+  color: rgb(100, 106, 124);
+  margin-bottom: 16px;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  background: linear-gradient(to right, #8360c3, #2ebf91);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover,
+.submit:hover {
+  opacity: 0.8;
+}
+
+button:active,
+.submit:active {
+  opacity: 0.6;
+}
+
+header {
+  margin-bottom: 32px;
+}
+
+h2 {
+  margin-bottom: 16px;
+  color: rgb(100, 106, 124);
+}
+
+.task {
+  background-color: rgb(17, 23, 41);
+  display: flex;
+  color: rgb(100, 106, 124);
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.task-text {
+  flex-grow: 1;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 2px;
+  color: rgb(179, 179, 191);
+  transition-duration: 0.5s;
+  caret-color: red;
+}
+
+.task-text:not(:read-only) {
+  background: linear-gradient(to right, #8360c3, #2ebf91);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.popup {
+  position: absolute;
+  z-index: 10;
+  background-color: #adb5bd;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px;
+  max-width: 600px;
+  top: 15%;
+  display: none;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding: 20px 10px 20px;
+}
+
+p {
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.close-popup {
+  font-size: 24px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.active {
+  opacity: 1;
+  pointer-events: all;
+}

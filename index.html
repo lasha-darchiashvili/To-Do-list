@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="page">
+      <header class="header">
+        <h1 class="title">To Do List 2022</h1>
+        <form id="form">
+          <input
+            type="text"
+            class="text"
+            placeholder="Type here your To Do task"
+          />
+          <input type="submit" class="submit button" value="Add task" />
+        </form>
+      </header>
+
+      <main class="main">
+        <h2 class="tasks-title">Tasks</h2>
+
+        <div class="tasks">
+          <!-- <div class="task">
+            <input type="text" class="task-text" value="asdd" readonly />
+            <button class="edit button">EDIT</button>
+            <button class="delete button">DELETE</button>
+          </div> -->
+        </div>
+      </main>
+    </section>
+    <div class="popup">
+      <div class="error-container">
+        <h1 class="error">Error</h1>
+        <p>Submitting empty textbox is not possible, Please enter To Do task</p>
+        <button class="close-popup button">Close</button>
+      </div>
+    </div>
+    <div class="overlay"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
