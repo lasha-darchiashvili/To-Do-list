@@ -22,7 +22,7 @@ body {
   border-radius: 10px;
   font-weight: 700;
   font-size: 16px;
-  caret-color: red;
+  caret-color: blue;
 }
 
 .text::placeholder {
